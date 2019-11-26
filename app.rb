@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require_relative './lib/list'
 
 class BookmarkManager < Sinatra::Base
   get '/' do
@@ -7,16 +8,10 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarklist' do
-    bookmarklist =
-    [
-    "www.google.com",
-    "www.amazon.co.uk",
-    "www.asos.com"
-    ]
+    @bookmarks = Bookmark.all
+    erb :list
 
-erb :list
 
-bookmarklist.join
 end
 
   run! if app_file == $0
