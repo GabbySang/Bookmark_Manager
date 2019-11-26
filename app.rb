@@ -3,6 +3,7 @@ require 'sinatra/base'
 class BookmarkManager < Sinatra::Base
   get '/' do
     'Welcome to Bookmark Manager'
+    erb :index
   end
 
   get '/bookmarklist' do
@@ -13,6 +14,7 @@ class BookmarkManager < Sinatra::Base
     "www.asos.com"
     ]
 
+erb :list
 
 bookmarklist.join
 end
