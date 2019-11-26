@@ -6,10 +6,10 @@ feature 'User can visit the home page' do
 
 feature "User can access list of bookmarks" do
   scenario 'User views bookmark list' do
-    visit('/')
+    visit('/bookmarklist')
     expect(page).to have_content "www.google.com"
-    expect(page).to have_content "wwww.amazon.co.uk"
-    expect(page).to have_content "wwww.asos.com"
+    expect(page).to have_content "www.amazon.co.uk"
+    expect(page).to have_content "www.asos.com"
   end
 end
 end
