@@ -1,7 +1,7 @@
 #need to add in user stories
 #model diagram
 
-
+x 2
 
 Connect to psql
 Create the database using the psql command CREATE DATABASE bookmark_manager;

@@ -3,10 +3,18 @@
     "coverage": {
       "/Users/student/bookmark_manager/spec/bookmark_spec.rb": [
         1,
+        1,
         null,
         1,
         1,
         1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
         1,
         null,
         1,
@@ -30,6 +38,14 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
         1,
         1,
         1,
@@ -38,6 +54,6 @@
         null
       ]
     },
-    "timestamp": 1574784009
+    "timestamp": 1574940438
   }
 }
