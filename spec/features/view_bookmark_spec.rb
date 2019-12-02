@@ -12,17 +12,15 @@ feature 'User can visit the home page' do
 
 feature "User can access list of bookmarks" do
   scenario 'User views bookmark list' do
-    Bookmark.create(url: "http://www.google.com")
-    Bookmark.create(url: "http://www.amazon.co.uk")
-    Bookmark.create(url: "http://www.asos.com")
-
-
+    Bookmark.create(url: 'http://www.google.com', title: 'Google')
+    Bookmark.create(url: 'http://www.amazon.co.uk', title: 'Amazon')
+    Bookmark.create(url: 'http://www.asos.com', title: 'Asos')
 
     visit('/bookmarklist')
 
-    expect(page).to have_content "http://www.google.com"
-    expect(page).to have_content "http://www.amazon.co.uk"
-    expect(page).to have_content "http://www.asos.com"
+    expect(page).to have_link('Google', href: 'http://www.google.com')
+    expect(page).to have_link('Amazon', href: 'http://www.amazon.co.uk')
+    expect(page).to have_link('Asos', href: 'http://www.asos.com')
   end
 end
-end 
+end
